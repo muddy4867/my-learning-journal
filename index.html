@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>����� å, ���� ���</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Ȩ����"><span class="brand-mark">��</span><span><b>����� ����</b><small>HISTORY & READING</small></span></a>
+      <div class="side-label">���� ����</div>
+      <nav class="nav-list" aria-label="�� �޴�">
+        <button class="nav-item active" data-page="home"><span>?</span>������ ��ú���</button>
+        <button class="nav-item" data-page="study"><span>?</span>�ѱ��� �н�</button>
+        <button class="nav-item" data-page="calendar"><span>��</span>���� Ķ����</button>
+        <button class="nav-item" data-page="scores"><span>��</span>���� ����</button>
+        <button class="nav-item" data-page="books"><span>��</span>���� ����</button>
+        <button class="nav-item" data-page="notes"><span>?</span>���� ��Ʈ</button>
+        <button class="nav-item" data-page="stats"><span>?</span>���� ���</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="sync-card"><span class="sync-dot" id="syncDot"></span><div><b id="syncTitle">�� ��⿡ ���� ��</b><small id="syncDesc">�������� �ڵ� ����ſ�</small></div></div><button class="google-btn" id="googleBtn"><span class="google-g">G</span>Google�� �α���</button><p class="privacy-note">�α����ϸ� ��� �� ����ȭ�� ����� �� �־��.</p></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-brand" data-page="home">�� ����� ����</button><div class="topbar-right"><span id="todayLabel"></span><button class="icon-btn" id="quickAdd" title="���� ��� �߰�">��</button></div></header>
+      <div id="view" class="view"></div>
+      <footer class="footer">���� �ӵ���, ������ �׾ư��� ��� <span>?</span></footer>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
+
