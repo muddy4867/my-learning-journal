@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
-  <title>����� å, ���� ���</title>
+  <title>역사와 책, 나의 기록</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,27 +14,26 @@
 <body>
   <div class="app-shell">
     <aside class="sidebar">
-      <a class="brand" href="#home" aria-label="Ȩ����"><span class="brand-mark">��</span><span><b>����� ����</b><small>HISTORY & READING</small></span></a>
-      <div class="side-label">���� ����</div>
-      <nav class="nav-list" aria-label="�� �޴�">
-        <button class="nav-item active" data-page="home"><span>?</span>������ ��ú���</button>
-        <button class="nav-item" data-page="study"><span>?</span>�ѱ��� �н�</button>
-        <button class="nav-item" data-page="calendar"><span>��</span>���� Ķ����</button>
-        <button class="nav-item" data-page="scores"><span>��</span>���� ����</button>
-        <button class="nav-item" data-page="books"><span>��</span>���� ����</button>
-        <button class="nav-item" data-page="notes"><span>?</span>���� ��Ʈ</button>
-        <button class="nav-item" data-page="stats"><span>?</span>���� ���</button>
+      <a class="brand" href="#home" aria-label="홈으로"><span class="brand-mark">史</span><span><b>기록의 서재</b><small>HISTORY & READING</small></span></a>
+      <div class="side-label">나의 공간</div>
+      <nav class="nav-list" aria-label="주 메뉴">
+        <button class="nav-item active" data-page="home"><span>⌂</span>오늘의 대시보드</button>
+        <button class="nav-item" data-page="study"><span>✦</span>한국사 학습</button>
+        <button class="nav-item" data-page="calendar"><span>▦</span>통합 캘린더</button>
+        <button class="nav-item" data-page="scores"><span>↗</span>기출 점수</button>
+        <button class="nav-item" data-page="books"><span>▤</span>독서 서재</button>
+        <button class="nav-item" data-page="notes"><span>✎</span>독서 노트</button>
+        <button class="nav-item" data-page="stats"><span>◷</span>나의 통계</button>
       </nav>
-      <div class="sidebar-bottom"><div class="sync-card"><span class="sync-dot" id="syncDot"></span><div><b id="syncTitle">�� ��⿡ ���� ��</b><small id="syncDesc">�������� �ڵ� ����ſ�</small></div></div><button class="google-btn" id="googleBtn"><span class="google-g">G</span>Google�� �α���</button><p class="privacy-note">�α����ϸ� ��� �� ����ȭ�� ����� �� �־��.</p></div>
+      <div class="sidebar-bottom"><div class="sync-card"><span class="sync-dot" id="syncDot"></span><div><b id="syncTitle">이 기기에 저장 중</b><small id="syncDesc">브라우저에 자동 저장돼요</small></div></div><button class="google-btn" id="googleBtn"><span class="google-g">G</span>Google로 로그인</button><p class="privacy-note">로그인하면 기기 간 동기화를 사용할 수 있어요.</p></div>
     </aside>
     <main class="main-area">
-      <header class="topbar"><button class="mobile-brand" data-page="home">�� ����� ����</button><div class="topbar-right"><span id="todayLabel"></span><button class="icon-btn" id="quickAdd" title="���� ��� �߰�">��</button></div></header>
+      <header class="topbar"><button class="mobile-brand" data-page="home">史 기록의 서재</button><div class="topbar-right"><span id="todayLabel"></span><button class="icon-btn" id="quickAdd" title="빠른 기록 추가">＋</button></div></header>
       <div id="view" class="view"></div>
-      <footer class="footer">���� �ӵ���, ������ �׾ư��� ��� <span>?</span></footer>
+      <footer class="footer">나의 속도로, 꾸준히 쌓아가는 기록 <span>✦</span></footer>
     </main>
   </div>
   <div id="modalRoot"></div>
   <div class="toast" id="toast" role="status"></div>
 </body>
 </html>
-
