@@ -1,4 +1,9 @@
-// Google 로그인과 기기 간 동기화를 켜려면 Firebase 웹 앱 설정을 입력하세요.
-// Firebase Console에서 Authentication > Google 제공업체와 Firestore를 활성화해야 합니다.
-// 설정이 비어 있으면 앱은 이 브라우저의 로컬 저장소를 사용합니다.
-export const firebaseConfig = {};
+// Firebase web configuration for Google sign-in and Firestore sync.
+export const firebaseConfig = {
+  apiKey: "AIzaSyD-MHoQoCISHwKUL1CgB_WJ9D9eB2_GKyg",
+  authDomain: "my-learning-journal-1082f.firebaseapp.com",
+  projectId: "my-learning-journal-1082f",
+  storageBucket: "my-learning-journal-1082f.firebasestorage.app",
+  messagingSenderId: "498160915018",
+  appId: "1:498160915018:web:3b0bfc93cc2cf29e6e4cb3"
+};
